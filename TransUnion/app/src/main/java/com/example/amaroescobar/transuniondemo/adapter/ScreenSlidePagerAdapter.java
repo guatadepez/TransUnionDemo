@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.view.ViewGroup;
 
 import com.example.amaroescobar.transuniondemo.Pregunta;
@@ -12,7 +13,7 @@ import com.example.amaroescobar.transuniondemo.questionClass;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ScreenSlidePagerAdapter extends FragmentPagerAdapter {
+public class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
 
     private static final int NUM_PAGES = 3;
     List<Pregunta> questions;
@@ -50,8 +51,11 @@ public class ScreenSlidePagerAdapter extends FragmentPagerAdapter {
         return NUM_PAGES;
     }
 
-    public void clearAllItems(){
-        questions.clear();
-        this.notifyDataSetChanged();
-    }
+    /*public void setPagerItems(ArrayList<Pregunta> preguntas) {
+        if (Pregunta != null)
+            for (int i = 0; i < mPagerItems.size(); i++) {
+                mFragmentManager.beginTransaction().remove(Pregunta.get(i).getFragment()).commit();
+            }
+        questions = preguntas;
+    }*/
 }

@@ -66,8 +66,8 @@ public class AutentiaWSClient {
 
     public String sendResponse(HashMap<String,String> hashMap, String rut) {
 
-        String url = "http://192.168.1.114:8081/enviarRespuestas";
-        //String url = "http://172.16.14.41/autentiaws/enviarRespuestas";
+        //String url = "http://192.168.1.114:8081/enviarRespuestas";
+        String url = "http://172.16.14.41/autentiaws/enviarRespuestas";
 
         String result = null;
         Respuesta resp;
@@ -98,8 +98,8 @@ public class AutentiaWSClient {
 
     public List<Pregunta> getQuestions(String nroSerie,String institucion,String rut,Context context) throws Exception {
 
-        String url = "http://192.168.1.114:8081/obtenerPreguntas";
-        //String url = "http://172.16.14.41/autentiaws/obtenerPreguntas";
+        //String url = "http://192.168.1.114:8081/obtenerPreguntas";
+        String url = "http://172.16.14.41/autentiaws/obtenerPreguntas";
         List<questionClass> questionClassList = new LinkedList<>();
 
         String android_id = Settings.Secure.getString(context.getContentResolver(),

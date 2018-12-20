@@ -137,10 +137,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 mPager = (ViewPager) findViewById(R.id.pager);
+                mPager.setAdapter(null);
                 mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager(),questionClassList);
                 mPager.setAdapter(mPagerAdapter);
-                mPagerAdapter.notifyDataSetChanged();
-                mPager.invalidate();
                 mPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
                     @Override
                     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
