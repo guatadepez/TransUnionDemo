@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="10dp"
+    android:id="@+id/questioncardview">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="12dip"
+            android:text="Indique ¿Cuál es el modelo de vehículo que Ud. adquirió en Abril del 2012?"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ODGE RAM 4.7" />
+
+            <RadioButton
+                android:id="@+id/rb_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FIAT BERTONE" />
+
+            <RadioButton
+                android:id="@+id/rb_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KIA MOTORS FRONTIER II PLUS DH 2.5" />
+
+            <RadioButton
+                android:id="@+id/rb_option4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ninguna de las Anteriores" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+
+
+</android.support.v7.widget.CardView>
